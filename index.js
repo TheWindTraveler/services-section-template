@@ -1,4 +1,4 @@
- const buttons = document.querySelectorAll('.services-nav-button');
+const buttons = document.querySelectorAll('.services-nav-button');
 const services = document.querySelectorAll('.services');
 
 // Loop through each button
