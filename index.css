@@ -79,8 +79,19 @@ h1 {
     background: white;
     padding: 15px;
     border-radius: 8px;
+    transform: scale(1);
+    opacity: 1;
     text-align: center;
-    transition: transform 0.3s;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+
+.services.hide {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+    visibility: hidden; /* hides it but keeps layout clean */
+  position: absolute;
 }
 
 .services img {

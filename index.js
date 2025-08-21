@@ -14,9 +14,9 @@ buttons.forEach(btn => {
         // Loop through each services
         services.forEach(service => {
           if (filter === "all" || service.getAttribute('data-category') === filter) {
-            service.style.display = "block";
+            service.classList.remove("hide");
           } else {
-            service.style.display = "none";
+            service.classList.add("hide");
             }
         });
       });
